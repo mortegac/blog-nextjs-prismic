@@ -12,16 +12,16 @@ yarn dev
 
 ## CONFIGURE 
 - Install
-´´´
+```
 npm install tailwindcss -D
 
 <!-- en caso de error -->
 npm uninstall tailwindcss postcss autoprefixer
 npm install tailwindcss@latest postcss@latest autoprefixer@latest
 
-´´´
+```
 - Contenido archivo ´tailwind.config.js´
-´´´
+```
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -33,7 +33,21 @@ module.exports = {
   },
   plugins: [],
 }
-´´´
+```
+
+- Agregar al archivo ´globals.css´
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind base;
+```
+
+
+
+
+
+
 
 ## Deploy on Vercel
 
